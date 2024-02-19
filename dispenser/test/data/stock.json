@@ -1,0 +1,20 @@
+{
+    "prices": {
+        "Coke": 2,
+        "Redbull": 2.25,
+        "Water": 0.5,
+        "Orange_Juice": 1.95
+    },
+    "available_units": {
+        "Coke": 10,
+        "Redbull": 5,
+        "Water": 20,
+        "Orange_Juice": 0
+    },
+    "is_expired": {
+        "Coke": true,
+        "Redbull": true,
+        "Water": false,
+        "Orange_Juice": false
+    }
+}
