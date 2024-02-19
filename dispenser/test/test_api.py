@@ -1,5 +1,6 @@
 """File that will contain all unit tests for api.py"""
 
+import os
 import json
 
 import pytest
@@ -18,7 +19,9 @@ class TestIsProductAvailable:
     def setup_teardown(self):
         """populate later"""
         stock = None
-        with open("./data/stock.json", encoding="utf8") as filepointer:
+        with open(
+            os.path.join(os.getcwd(), "test/data/stock.json"), encoding="utf8"
+        ) as filepointer:
             stock = json.load(filepointer)
         yield stock
 
@@ -52,7 +55,9 @@ class TestIsProdcutExpired:
     def setup_teardown(self):
         """populate later"""
         stock = None
-        with open("./data/stock.json", encoding="utf8") as filepointer:
+        with open(
+            os.path.join(os.getcwd(), "test/data/stock.json"), encoding="utf8"
+        ) as filepointer:
             stock = json.load(filepointer)
         yield stock
 
@@ -86,7 +91,9 @@ class TestIsSufficientChangeAvailableForTransaction:
     def setup_teardown(self):
         """populate later"""
         stock = None
-        with open("./data/stock.json", encoding="utf8") as filepointer:
+        with open(
+            os.path.join(os.getcwd(), "test/data/stock.json"), encoding="utf8"
+        ) as filepointer:
             stock = json.load(filepointer)
         yield stock
 

@@ -1,12 +1,14 @@
 """This file will contain the endpoints needed for the backend"""
 
+import os
 import json
 from uuid import uuid4
 from flask import Flask, jsonify, request
 
-from dispenser.src.constants import (
-    PATH_PROJECT_AVAILABLE_CASH_DATA_FILE,
-    PATH_PROJECT_STOCK_DATA_FILE,
+PATH_PROJECT_ROOT = os.getcwd()
+PATH_PROJECT_STOCK_DATA_FILE = os.path.join(PATH_PROJECT_ROOT, "src/data/stock.json")
+PATH_PROJECT_AVAILABLE_CASH_DATA_FILE = os.path.join(
+    PATH_PROJECT_ROOT, "src/data/cash.json"
 )
 
 

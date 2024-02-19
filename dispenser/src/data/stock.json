@@ -8,7 +8,7 @@
     "available_units": {
         "Coke": 10,
         "Redbull": 5,
-        "Water": 20,
+        "Water": 15,
         "Orange_Juice": 2
     },
     "is_expired": {
