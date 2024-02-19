@@ -4,7 +4,7 @@ import json
 from uuid import uuid4
 from flask import Flask, jsonify, request
 
-from src.constants import (
+from dispenser.src.constants import (
     PATH_PROJECT_AVAILABLE_CASH_DATA_FILE,
     PATH_PROJECT_STOCK_DATA_FILE,
 )

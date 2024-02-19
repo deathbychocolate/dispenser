@@ -4,7 +4,7 @@ import json
 
 import pytest
 
-from src.api import (
+from dispenser.src.api import (
     is_product_available,
     is_product_expired,
     is_sufficient_change_available_for_transaction,
@@ -97,6 +97,7 @@ class TestIsSufficientChangeAvailableForTransaction:
         """populate later"""
         result = is_sufficient_change_available_for_transaction(
             setup_teardown["is_expired"],
+            setup_teardown["prices"],
             "Coke",
         )  # Water is set to True
         assert result is True
@@ -108,6 +109,7 @@ class TestIsSufficientChangeAvailableForTransaction:
         """populate later"""
         result = is_sufficient_change_available_for_transaction(
             setup_teardown["is_expired"],
+            setup_teardown["prices"],
             "Water",
         )  # Water is set to false
         assert result is False
