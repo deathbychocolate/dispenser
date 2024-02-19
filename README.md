@@ -11,4 +11,4 @@ It works like any other API. Simply make a call to any of the following URIs:
 - ```http://127.0.0.1:5000/purchase```
 
 # Tips and tricks?
-Try and visit the test suite in the following directory: ```dispenser/test``` using the following terminal command ```pytest```
+Try and visit the test suite in the following directory ```dispenser``` and use the following terminal command ```pytest test/```
